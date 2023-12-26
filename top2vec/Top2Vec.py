@@ -96,7 +96,7 @@ def default_tokenizer(document):
         List of tokens.
 
     """
-    return simple_preprocess(strip_tags(document), deacc=True)
+    return simple_preprocess(strip_tags(document), deacc=False)
 
 
 def get_chunks(tokens, chunk_length, max_num_chunks, chunk_overlap_ratio):
